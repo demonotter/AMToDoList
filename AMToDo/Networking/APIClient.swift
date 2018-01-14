@@ -11,7 +11,7 @@ import Alamofire
 import ReactiveSwift
 
 
-let baseURL = "https://jsonplaceholder.typicode.com/todos/"
+let baseURL = ""
 
 enum APIError : Error {
    case noData

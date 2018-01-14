@@ -27,7 +27,7 @@ class TasksViewController: UIViewController, UITableViewDataSource, UITableViewD
    
    //MARK: View model
    func setupViewModel() {
-      //self.viewModel.getRemoteTasks()
+      self.viewModel.getRemoteTasks()
       self.viewModel.updateClosure = {
          self.tasksTableView.reloadData()
       }

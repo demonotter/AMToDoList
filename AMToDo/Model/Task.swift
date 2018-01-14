@@ -22,7 +22,7 @@ class Task : Object {
       self.init()
       self.id = jsonData["id"] as? Int ?? 0
       self.title = jsonData["title"] as? String ?? ""
-      self.isDone = jsonData["completed"] as? Bool ?? false
+      self.isDone = jsonData["isDone"] as? Bool ?? false
    }
 
 }
