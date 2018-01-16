@@ -56,6 +56,11 @@ class TasksViewModel {
          task.title = title
          RealmManager.instance.add(task: task)
          self.updateClosure?()
+         apiClient.createTask(task).startWithResult { result in
+            if let error = result.error {
+               self.errorClosure?(error)
+            }
+         }
       }
    }
    
